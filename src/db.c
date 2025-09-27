@@ -21,6 +21,10 @@ int csv_handler(){
     scanf("%d", &numberOfFiles);
 
     //store the filenames the user would like to process (this will be a drag and drop system later on)
+    //Im trying to store the location of the CSV file, maybe it would be better to calculate
+    //the length of the string first by putting the users input into a buffer then using strlen on it.
+    //and maybe in that same way we could dynamically calculate the amount of files the yser
+    //wants to enter instead of asking explicitly 
     //step 1: allocate array of pointers to strings
     char **filenames = (char**) calloc(numberOfFiles, sizeof(char*));
 
